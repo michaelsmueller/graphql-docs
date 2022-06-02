@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
+    <title>_poolMap</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
+</head>
+<body class="slds-scrollable--y">
+    <nav class="slds-grid slds-grid--vertical slds-col--rule-right">
+        <header class="slds-p-around--medium slds-col slds-shrik slds-grow-none">
+            <button class="slds-button slds-button--icon slds-float--right js-toggle-navigation less-than-medium">
+                <i class="material-icons">close</i>
+            </button>
+                <h3 class="slds-text-heading--medium"><a href="./">GraphQL Schema</a></h3>
+            <div class="slds-p-top--small">
+                <input id="type-search" type="text" placeholder="Search a type" autofocus="" class="slds-input" />
+            </div>
+        </header>
+        <div id="navication-scroll" class="slds-scrollable--y slds-col slds-grow">
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Schema</h4>
+    <ul>
+        <li  title="Query">
+            <a href="query.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Query
+            </a>
+        </li>
+        <li  title="Subscription">
+            <a href="subscription.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Subscription
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Scalars</h4>
+    <ul>
+        <li  title="BigDecimal">
+            <a href="bigdecimal.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                BigDecimal
+            </a>
+        </li>
+        <li  title="BigInt">
+            <a href="bigint.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                BigInt
+            </a>
+        </li>
+        <li  title="Boolean">
+            <a href="boolean.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Boolean
+            </a>
+        </li>
+        <li  title="Bytes">
+            <a href="bytes.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Bytes
+            </a>
+        </li>
+        <li  title="ID">
+            <a href="id.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ID
+            </a>
+        </li>
+        <li  title="Int">
+            <a href="int.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Int
+            </a>
+        </li>
+        <li  title="String">
+            <a href="string.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                String
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Enums</h4>
+    <ul>
+        <li  title="Account_orderBy">
+            <a href="account_orderby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Account_orderBy
+            </a>
+        </li>
+        <li  title="Asset_orderBy">
+            <a href="asset_orderby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Asset_orderBy
+            </a>
+        </li>
+        <li  title="Global_orderBy">
+            <a href="global_orderby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Global_orderBy
+            </a>
+        </li>
+        <li  title="Loan_orderBy">
+            <a href="loan_orderby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Loan_orderBy
+            </a>
+        </li>
+        <li  title="LoanPosition_orderBy">
+            <a href="loanposition_orderby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                LoanPosition_orderBy
+            </a>
+        </li>
+        <li  title="LoanState">
+            <a href="loanstate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                LoanState
+            </a>
+        </li>
+        <li  title="Maple_orderBy">
+            <a href="maple_orderby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Maple_orderBy
+            </a>
+        </li>
+        <li  title="MplRewards_orderBy">
+            <a href="mplrewards_orderby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MplRewards_orderBy
+            </a>
+        </li>
+        <li  title="OrderDirection">
+            <a href="orderdirection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                OrderDirection
+            </a>
+        </li>
+        <li  title="Pool_orderBy">
+            <a href="pool_orderby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Pool_orderBy
+            </a>
+        </li>
+        <li  title="PoolPosition_orderBy">
+            <a href="poolposition_orderby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PoolPosition_orderBy
+            </a>
+        </li>
+        <li  title="PoolState">
+            <a href="poolstate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PoolState
+            </a>
+        </li>
+        <li  title="Repayment_orderBy">
+            <a href="repayment_orderby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Repayment_orderBy
+            </a>
+        </li>
+        <li  title="Transaction_orderBy">
+            <a href="transaction_orderby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Transaction_orderBy
+            </a>
+        </li>
+        <li  title="Tx_orderBy">
+            <a href="tx_orderby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Tx_orderBy
+            </a>
+        </li>
+        <li  title="TxType">
+            <a href="txtype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TxType
+            </a>
+        </li>
+        <li  title="_loanMap_orderBy">
+            <a href="_loanmap_orderby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _loanMap_orderBy
+            </a>
+        </li>
+        <li  title="_loanPositionMap_orderBy">
+            <a href="_loanpositionmap_orderby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _loanPositionMap_orderBy
+            </a>
+        </li>
+        <li  title="_poolMap_orderBy">
+            <a href="_poolmap_orderby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _poolMap_orderBy
+            </a>
+        </li>
+        <li  title="_poolPositionMap_orderBy">
+            <a href="_poolpositionmap_orderby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _poolPositionMap_orderBy
+            </a>
+        </li>
+        <li  title="_priceFeedAssetMap_orderBy">
+            <a href="_pricefeedassetmap_orderby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _priceFeedAssetMap_orderBy
+            </a>
+        </li>
+        <li  title="_stakeLockerPoolMap_orderBy">
+            <a href="_stakelockerpoolmap_orderby.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _stakeLockerPoolMap_orderBy
+            </a>
+        </li>
+        <li  title="_SubgraphErrorPolicy_">
+            <a href="_subgrapherrorpolicy_.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _SubgraphErrorPolicy_
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Objects</h4>
+    <ul>
+        <li  title="Account">
+            <a href="account.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Account
+            </a>
+        </li>
+        <li  title="Asset">
+            <a href="asset.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Asset
+            </a>
+        </li>
+        <li  title="Global">
+            <a href="global.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Global
+            </a>
+        </li>
+        <li  title="Loan">
+            <a href="loan.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Loan
+            </a>
+        </li>
+        <li  title="LoanPosition">
+            <a href="loanposition.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                LoanPosition
+            </a>
+        </li>
+        <li  title="Maple">
+            <a href="maple.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Maple
+            </a>
+        </li>
+        <li  title="MplRewards">
+            <a href="mplrewards.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MplRewards
+            </a>
+        </li>
+        <li  title="Pool">
+            <a href="pool.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Pool
+            </a>
+        </li>
+        <li  title="PoolPosition">
+            <a href="poolposition.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PoolPosition
+            </a>
+        </li>
+        <li  title="Repayment">
+            <a href="repayment.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Repayment
+            </a>
+        </li>
+        <li  title="Transaction">
+            <a href="transaction.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Transaction
+            </a>
+        </li>
+        <li  title="Tx">
+            <a href="tx.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Tx
+            </a>
+        </li>
+        <li  title="_Block_">
+            <a href="_block_.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _Block_
+            </a>
+        </li>
+        <li  title="_loanMap">
+            <a href="_loanmap.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _loanMap
+            </a>
+        </li>
+        <li  title="_loanPositionMap">
+            <a href="_loanpositionmap.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _loanPositionMap
+            </a>
+        </li>
+        <li  title="_Meta_">
+            <a href="_meta_.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _Meta_
+            </a>
+        </li>
+        <li class="slds-is-active" title="_poolMap">
+            <a href="_poolmap.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _poolMap
+            </a>
+        </li>
+        <li  title="_poolPositionMap">
+            <a href="_poolpositionmap.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _poolPositionMap
+            </a>
+        </li>
+        <li  title="_priceFeedAssetMap">
+            <a href="_pricefeedassetmap.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _priceFeedAssetMap
+            </a>
+        </li>
+        <li  title="_stakeLockerPoolMap">
+            <a href="_stakelockerpoolmap.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _stakeLockerPoolMap
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Input Objects</h4>
+    <ul>
+        <li  title="Account_filter">
+            <a href="account_filter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Account_filter
+            </a>
+        </li>
+        <li  title="Asset_filter">
+            <a href="asset_filter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Asset_filter
+            </a>
+        </li>
+        <li  title="Block_height">
+            <a href="block_height.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Block_height
+            </a>
+        </li>
+        <li  title="Global_filter">
+            <a href="global_filter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Global_filter
+            </a>
+        </li>
+        <li  title="Loan_filter">
+            <a href="loan_filter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Loan_filter
+            </a>
+        </li>
+        <li  title="LoanPosition_filter">
+            <a href="loanposition_filter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                LoanPosition_filter
+            </a>
+        </li>
+        <li  title="Maple_filter">
+            <a href="maple_filter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Maple_filter
+            </a>
+        </li>
+        <li  title="MplRewards_filter">
+            <a href="mplrewards_filter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                MplRewards_filter
+            </a>
+        </li>
+        <li  title="Pool_filter">
+            <a href="pool_filter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Pool_filter
+            </a>
+        </li>
+        <li  title="PoolPosition_filter">
+            <a href="poolposition_filter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                PoolPosition_filter
+            </a>
+        </li>
+        <li  title="Repayment_filter">
+            <a href="repayment_filter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Repayment_filter
+            </a>
+        </li>
+        <li  title="Transaction_filter">
+            <a href="transaction_filter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Transaction_filter
+            </a>
+        </li>
+        <li  title="Tx_filter">
+            <a href="tx_filter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Tx_filter
+            </a>
+        </li>
+        <li  title="_loanMap_filter">
+            <a href="_loanmap_filter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _loanMap_filter
+            </a>
+        </li>
+        <li  title="_loanPositionMap_filter">
+            <a href="_loanpositionmap_filter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _loanPositionMap_filter
+            </a>
+        </li>
+        <li  title="_poolMap_filter">
+            <a href="_poolmap_filter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _poolMap_filter
+            </a>
+        </li>
+        <li  title="_poolPositionMap_filter">
+            <a href="_poolpositionmap_filter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _poolPositionMap_filter
+            </a>
+        </li>
+        <li  title="_priceFeedAssetMap_filter">
+            <a href="_pricefeedassetmap_filter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _priceFeedAssetMap_filter
+            </a>
+        </li>
+        <li  title="_stakeLockerPoolMap_filter">
+            <a href="_stakelockerpoolmap_filter.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                _stakeLockerPoolMap_filter
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Directives</h4>
+    <ul>
+        <li  title="derivedFrom">
+            <a href="derivedfrom.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                derivedFrom
+            </a>
+        </li>
+        <li  title="entity">
+            <a href="entity.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                entity
+            </a>
+        </li>
+        <li  title="subgraphId">
+            <a href="subgraphid.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                subgraphId
+            </a>
+        </li>
+    </ul>
+</div>
+        </div>
+    </nav>
+    <main><section class="title slds-theme--inverse">
+    <div class="container slds-grid">
+        <div>
+        <button class="slds-button js-toggle-navigation less-than-medium">
+            <i class="material-icons slds-button__icon slds-button__icon--left">menu</i>
+            <span class="slds-text-title--caps">Types<span>
+        </button>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
+        <h1 class="slds-text-heading--large">_poolMap</h1>
+        <div class="slds-text-body--regular"></div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="graphql-schema-definition" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#graphql-schema-definition">
+                <i class="material-icons">link</i>
+            </a>
+            GraphQL Schema definition
+        </h2>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">_poolMap</span> {</li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">pool</span>: <a class="support type" href="pool.doc.html">Pool</a>! </span></li><li>}</li></ul></code>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="require-by" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#require-by">
+                <i class="material-icons">link</i>
+            </a>
+            Require by
+        </h2>
+        <ul class="require-by"><li><a href="query.doc.html" title="Query - ">Query<em>null</em></a><li><li><a href="subscription.doc.html" title="Subscription - ">Subscription<em>null</em></a><li></ul>
+    </div>
+</section>
+<footer>
+<div class="container slds-p-around--large">
+    <p class="slds-text-align--right slds-text-title--caps">
+        Generated with <a href="https://github.com/2fd/graphdoc#readme" target="_blank">graphdoc 2.4.0</a>
+    </p>
+</div>
+</footer>
+</main>
+    <script src="./scripts/focus-active.js"></script>
+    <script src="./scripts/filter-types.js"></script>
+    <script src="./scripts/toggle-navigation.js"></script>
+</body>

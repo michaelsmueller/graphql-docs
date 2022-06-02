@@ -1,0 +1,17 @@
+{
+  "name": "graphql-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "graphdoc": "npx graphdoc --force -s ./schema.json -o ./doc/schema",
+    "graphql-markdown": "npx graphql-markdown ./schema.json > schema.md"
+  },
+  "author": "Michael Mueller",
+  "license": "ISC",
+  "dependencies": {
+    "@2fd/graphdoc": "^2.4.0",
+    "graphql-markdown": "^6.0.0",
+    "spectaql": "^0.11.0"
+  }
+}
